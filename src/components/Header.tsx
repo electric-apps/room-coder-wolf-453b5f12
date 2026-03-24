@@ -1,0 +1,16 @@
+import { Flex, Text } from "@radix-ui/themes";
+import { Link } from "@tanstack/react-router";
+
+export function Header() {
+	return (
+		<header style={{ borderBottom: "1px solid var(--gray-6)" }}>
+			<Flex align="center" justify="between" py="3" px="4">
+				<Link to="/" style={{ textDecoration: "none" }}>
+					<Text size="5" weight="bold">
+						🎯 TriviaBlitz
+					</Text>
+				</Link>
+			</Flex>
+		</header>
+	);
+}
